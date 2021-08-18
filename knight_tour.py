@@ -42,13 +42,11 @@ def get_possibilities(x,y):
 	return possibilities
 
 def solve():
-	r = input("Start row: ")
-	c = input("Start column: ")
+	row = int(input("Start row: "))
+	col = int(input("Start column: "))
 	onclick_automove = input("click automove button? (y/n): ")
 	if onclick_automove == "y":
 		pg.click(964,148)
-	row = int(r)
-	col = int(c)
 	board[row][col] = 1
 	counter = 2
 	for i in range(63):
